@@ -21,11 +21,8 @@ public class WordGraph {
     private void addEdge(String s1, String s2) {
         int editDistance = findEditDistance(s1, s2);
         if (editDistance == 1) {
-            if (wordMap.containsKey(s1)) {
+            if (wordMap.containsKey(s1) && wordMap.containsKey(s2)) {
                 wordMap.get(s1).add(s2);
-            }
-
-            if (wordMap.containsKey(s2)) {
                 wordMap.get(s2).add(s1);
             }
         }
