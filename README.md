@@ -7,11 +7,17 @@ chain changes exactly one letter from the previous word.
 Optionally, accept a custom dictionary to lookup against.
 For E.g.
 $ wordChain coins money
+
 ... coins
+
 ... corns
+
 ... cores
+
 ... cones
+
 ... coney
+
 ... money
 
 
